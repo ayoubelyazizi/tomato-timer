@@ -1,0 +1,100 @@
+@font-face{
+    font-family: Cheesy;
+    src : url('./XPLOR.otf')
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Cheesy';
+    color: whitesmoke;
+    font-size: 100px;
+}
+
+
+.content{
+    height: 500px;
+    width: 665.5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.text{
+    align-self: center;
+    justify-self: center ;
+    font-family: 'Cheesy';
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+#start{
+    grid-area: 1 / 1;
+}
+
+#reset{
+    justify-self: center;
+    align-self: center;
+    grid-area: 1 / 2;
+}
+
+#pause{
+    grid-area: 1 / 3;
+}
+
+.work{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-area: 2 / 1;
+    font-family: 'Cheesy';
+    font-size: 75px;
+    color: whitesmoke;
+}
+
+.pause{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-area: 2 / 3;
+    font-family: 'Cheesy';
+    font-size: 75px;
+    color: whitesmoke;
+}
+
+#reset_btn{
+    height: 50px;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+    grid-area: 2 / 2;
+    font-family: 'Cheesy';
+    font-size: 30px;
+    color: whitesmoke;
+    background-color: transparent;
+    border-radius: 25%;
+    border : 2px solid white;
+}
+
+#start_btn{
+    align-items: center;
+    justify-items: center;
+    grid-area: 3 / 1;
+    grid-column: span 3;
+    color: whitesmoke;
+    font-family: 'Cheesy';
+    font-size: 80px;
+    background-color: transparent;
+    border : 0px transparent;
+    padding-bottom: 15px ;
+}
